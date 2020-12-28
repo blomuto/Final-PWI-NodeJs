@@ -9,6 +9,7 @@ const register = async ({nombre, apellido, mail, telefono, usuario, password,} =
     const { insertId: idPerson } = await createPerson({nombre, apellido, mail, telefono, usuario, password});
     const { insertId: idUsuario } = await createUser({usuario, password: sha1(password), idPerson, confirmacionCorreo: uid(),});
     return idUsuario;
+    
 /*     const mailObject = {
       mail,
       message: `
