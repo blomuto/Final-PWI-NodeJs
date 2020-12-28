@@ -22,4 +22,4 @@ const create = (obj) =>
       .then((result) => result)
       .catch((e) => e);
 
-module.exports = { get, single, create };
+module.exports = { get, single, create};

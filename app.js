@@ -13,6 +13,7 @@ const especialidades = require('./routes/especialidades');
 const registro = require('./routes/registro');
 const login = require('./routes/login');
 const contacto = require('./routes/contacto');
+const adminEspecialistas = require('./routes/admin/especialistas');
 
 const app = express();
 
@@ -33,6 +34,7 @@ app.use('/especialidades', especialidades);
 app.use('/registro', registro);
 app.use('/login', login);
 app.use('/contacto', contacto);
+app.use('/admin/especialistas', adminEspecialistas);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -20,5 +20,4 @@ const newUser = async (req, res) => {
 
 router.get('/', showView);
 router.post('/new', newUser);
-/* router.get('/verify/:uid', verify); */
 module.exports = router;
