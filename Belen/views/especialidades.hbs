@@ -1,0 +1,52 @@
+<section class="container-fluid px-0 py-5 m-0">
+    <div class="container">
+        <h6 class="text-center">Especialidades </h6>
+        <div class="row p-0 m-0 justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-0 m-0">
+                <form action="/especialidades/gracias" method="POST" id="form_especialidades" subject="Especialidad enviada desde la Web">
+                    <div class="form-group p-0 m-0 ">
+                        <label for="nombre"></label>
+                        <input 
+                        type="text" 
+                        class="form-control campos" 
+                        id="nombre" 
+                        name="nombre"
+                        placeholder="Nombre" 
+                        required>
+                    </div>
+
+                    <div class="text-center pt-3">
+                        <button type="submit" value="Submit" class="btn btn-primary w-25">Enviar</button>
+                    </div>
+
+                    <div class="pt-2 text-center">
+                        <span class="text-success">{{message}}</span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+  <div class="col-12">
+    <table class="table table-hover">
+      <thead>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Especialidad</th>
+          <th></th>
+      </thead>
+      <tbody>
+        {{#each especialidades}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nombre}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
