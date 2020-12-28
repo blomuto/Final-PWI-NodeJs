@@ -1,0 +1,42 @@
+*{margin: 0%; padding: 0; box-sizing: border-box;}
+p{
+  font-size: 1em;
+}
+.logo{
+  max-height: 70px;
+  max-width: 100%;
+}
+.enlaces{
+  color: #00A859 !important;
+}
+.enlaces:hover{
+  color: #979593 !important;
+}
+.menupc{
+  display: flex;
+  justify-content: center;
+}
+.mifoot{
+  background-color:#303030;
+  color: #dddddd;
+}
+.superb{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.logo-horiz{
+  max-width: 350px;
+}
+.campos{
+  background-color: #F5F5F5;
+}
+.derechos{
+  color: #999999;
+}
+.xivo{
+  color: #c5c1c1;
+  text-decoration: none;
+}
+.xivo:hover{
+  color: white;
+}
